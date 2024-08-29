@@ -7,7 +7,6 @@ public class DeclararVariaveisFazerCasting {
 		double altura = 1.81;
 		int idade = 38;
 		
-		System.out.println("Idade:" + idade);
 		System.out.println((int)altura);
 
 	}
