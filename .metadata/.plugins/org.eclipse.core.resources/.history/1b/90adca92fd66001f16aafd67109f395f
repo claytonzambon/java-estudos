@@ -1,0 +1,20 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class CalculaFatorial {
+
+	public static void main(String[] args) {
+		
+		System.out.println("### Programa que cacula o Fatorial de um número ###");
+		Scanner leitura = new Scanner(System.in);
+		
+		System.out.print("*** Informe um número: ");
+		double numero = leitura.nextDouble();
+		
+		
+		
+		leitura.close();
+	}
+
+}
