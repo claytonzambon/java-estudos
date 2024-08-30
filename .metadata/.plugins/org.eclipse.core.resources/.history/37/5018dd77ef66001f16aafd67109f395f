@@ -27,11 +27,11 @@ public class JogoDaAdivinhacaoDeNumeros {
 			}
 			
 			if (numeroInformadoPeloUsuario > numeroSecreto) {
-				System.out.println("*** O número informado é maior que o número secreto ***\n");
+				System.out.println("\n*** O número informado é maior que o número secreto");
 			}
 			
 			if (numeroInformadoPeloUsuario < numeroSecreto) {
-				System.out.println("*** O número informado é menor que o número secreto ***\n");
+				System.out.println("\n*** O número informado é menor que o número secreto");
 			}
 			
 			if (i == 4) {

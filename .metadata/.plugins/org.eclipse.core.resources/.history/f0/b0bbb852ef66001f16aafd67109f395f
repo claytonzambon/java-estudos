@@ -20,21 +20,10 @@ public class JogoDaAdivinhacaoDeNumeros {
 		for (int i = 0; i < 5; i++) {
 			System.out.printf("#%s Tentativa -> Informe um número: ", i + 1);
 			numeroInformadoPeloUsuario = leitura.nextInt();
-						
 			if (numeroInformadoPeloUsuario == numeroSecreto) {
 				System.out.printf("\n###  O número secreto era %s, Parabéns você acertou ###\n", numeroSecreto);
 				break;
-			}
-			
-			if (numeroInformadoPeloUsuario > numeroSecreto) {
-				System.out.println("*** O número informado é maior que o número secreto ***\n");
-			}
-			
-			if (numeroInformadoPeloUsuario < numeroSecreto) {
-				System.out.println("*** O número informado é menor que o número secreto ***\n");
-			}
-			
-			if (i == 4) {
+			} else if (i == 4) {
 				System.out.println("\n--- Acabaram suas tentativas ---\n");
 			}
 		}
