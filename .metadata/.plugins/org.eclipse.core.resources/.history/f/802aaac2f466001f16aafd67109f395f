@@ -39,7 +39,6 @@ public class JogoDaAdivinhacaoDeNumeros {
 			}
 		}
 		
-		leitura.close();
 		System.out.println(">>> Fim da execução do Software<<<");
 		
 	}

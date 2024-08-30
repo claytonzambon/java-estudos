@@ -21,7 +21,6 @@ public class OutroLoop {
 			}
 		}
 		
-		leitura.close();
 		System.out.println("Media de avaliações " + mediaAvaliacao/totalNotas);
 
 	}

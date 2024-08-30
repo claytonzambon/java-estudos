@@ -26,7 +26,6 @@ public class PositivoOuNegativo {
 			}
 		}
 		
-		leitura.close();
 		System.out.println("\n>>> Fim da execução do Software <<<\n");
 
 	}

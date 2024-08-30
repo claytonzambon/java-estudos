@@ -32,7 +32,6 @@ public class ComparandoInteiros {
 			}
 		}
 		
-		leitura.close();
 		System.out.println("\n--- Fim da execução do Software ---\n");
 
 	}
