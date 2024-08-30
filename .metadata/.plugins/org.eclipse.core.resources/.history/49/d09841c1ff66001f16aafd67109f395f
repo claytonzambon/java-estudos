@@ -1,0 +1,28 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ContaBancaria {
+
+	public static void main(String[] args) {
+		
+		System.out.println("### Programa que simula uma Conta Bancária ###\n");
+		Scanner leitura = new Scanner(System.in);
+
+		String nomeCliente = "Clayton Zambon";
+		String tipoConta = "Conta Corrente";
+		double saldo = 2500.00;
+		
+		System.out.println("*****************************");
+		System.out.println("* Dados iniciais do Cliente *\n");
+		System.out.println("* Nome: " + nomeCliente );
+		System.out.println("* Tipo conta: " + tipoConta);
+		System.out.println("* Saldo inicial: R$ " + saldo);
+		System.out.println("*****************************");
+		
+		
+		
+		leitura.close();
+	}
+
+}
