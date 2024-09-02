@@ -9,4 +9,7 @@ public class Filme {
 	int totalDeAvaliacoes;
 	int duracaoEmMinutos;
 	
+	public String toString() {
+		return "Hello World!!!";
+	}
 }
