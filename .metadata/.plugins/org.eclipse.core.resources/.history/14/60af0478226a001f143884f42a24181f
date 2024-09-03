@@ -18,7 +18,6 @@ public class Principal {
 		System.out.println("Média de avaliações do filme: " + meuFilme.pegaMedia());
 		
 		//Atribuindo valor direto no atributo
-		//Isso não pode acontecer
 		meuFilme.somaDasAvaliacoes = 10;
 		meuFilme.totalDeAvaliacoes = 1;
 		

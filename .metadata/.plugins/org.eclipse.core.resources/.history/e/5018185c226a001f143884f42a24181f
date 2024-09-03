@@ -6,7 +6,7 @@ public class Filme {
 	int anoDeLancamento;
 	boolean incluidoNoPlano;
 	private double somaDasAvaliacoes;
-	private int totalDeAvaliacoes;
+	int totalDeAvaliacoes;
 	int duracaoEmMinutos;
 	
 	void exibeFichaTecnica() {
