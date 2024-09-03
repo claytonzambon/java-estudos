@@ -13,16 +13,16 @@ public class Principal {
 		meuFilme.avalia(5);
 		meuFilme.avalia(10);
 		
-		
-		System.out.println("Total de Avaliações: " + meuFilme.getTotalDeAvaliacoes());
+		System.out.println(meuFilme.somaDasAvaliacoes);
+		System.out.println(meuFilme.totalDeAvaliacoes);
 		System.out.println("Média de avaliações do filme: " + meuFilme.pegaMedia());
 		
 		//Atribuindo valor direto no atributo
 		//Isso não pode acontecer
-		//meuFilme.somaDasAvaliacoes = 10;
-		//meuFilme.totalDeAvaliacoes = 1;
+		meuFilme.somaDasAvaliacoes = 10;
+		meuFilme.totalDeAvaliacoes = 1;
 		
-		//System.out.println(meuFilme.pegaMedia());
+		System.out.println(meuFilme.pegaMedia());
 	}
 
 }

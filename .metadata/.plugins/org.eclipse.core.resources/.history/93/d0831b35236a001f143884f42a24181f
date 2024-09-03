@@ -19,10 +19,10 @@ public class Principal {
 		
 		//Atribuindo valor direto no atributo
 		//Isso não pode acontecer
-		//meuFilme.somaDasAvaliacoes = 10;
-		//meuFilme.totalDeAvaliacoes = 1;
+		meuFilme.somaDasAvaliacoes = 10;
+		meuFilme.totalDeAvaliacoes = 1;
 		
-		//System.out.println(meuFilme.pegaMedia());
+		System.out.println(meuFilme.pegaMedia());
 	}
 
 }
