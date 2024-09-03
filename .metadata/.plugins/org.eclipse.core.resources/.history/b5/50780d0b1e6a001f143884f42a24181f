@@ -13,7 +13,7 @@ public class Musica {
 		sb.append("Título: " + titulo);
 		sb.append("\nArtista: " + artista);
 		sb.append("\nAno de Lançamento: " + anoLancamento);
-		sb.append("\nAvaliação: " + mediaAvaliacoes());
+		sb.append("\nAvaliação: " + somaDasAvaliacoes);
 		
 		return sb.toString();
 	}

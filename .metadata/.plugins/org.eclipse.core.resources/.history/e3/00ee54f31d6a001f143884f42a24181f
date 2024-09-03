@@ -11,9 +11,9 @@ public class Musica {
 	public String exibeFichaTecnica() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Título: " + titulo);
-		sb.append("\nArtista: " + artista);
-		sb.append("\nAno de Lançamento: " + anoLancamento);
-		sb.append("\nAvaliação: " + mediaAvaliacoes());
+		sb.append("Artista: " + artista);
+		sb.append("Ano de Lançamento: " + anoLancamento);
+		sb.append("Avaliação: " + somaDasAvaliacoes);
 		
 		return sb.toString();
 	}
