@@ -1,7 +1,5 @@
 package exercicios_OO;
 
-import java.time.LocalDateTime;
-
 public class Carro {
 
 	String modelo;
@@ -20,7 +18,6 @@ public class Carro {
 	}
 	
 	public int retornaIdadeDoCarro() {
-		LocalDateTime data = LocalDateTime.now(); 
-		return data.getYear() - ano;
+		return 2024 - ano;
 	}
 }
