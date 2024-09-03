@@ -2,7 +2,6 @@ package screenmatchOO.br.com.zambon.screnmatch.modelos;
 
 public class Filme {
 	//Todo filme tem:
-	//Todo atributo precisa ser privado
 	private String nome;
 	private int anoDeLancamento;
 	private boolean incluidoNoPlano;

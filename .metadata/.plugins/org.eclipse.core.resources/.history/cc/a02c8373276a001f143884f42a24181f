@@ -2,7 +2,6 @@ package screenmatchOO.br.com.zambon.screnmatch.modelos;
 
 public class Filme {
 	//Todo filme tem:
-	//Todo atributo precisa ser privado
 	private String nome;
 	private int anoDeLancamento;
 	private boolean incluidoNoPlano;
@@ -25,14 +24,6 @@ public class Filme {
 
 	public void setAnoDeLancamento(int anoDeLancamento) {
 		this.anoDeLancamento = anoDeLancamento;
-	}
-	
-	public int getDuracaoEmMinutos() {
-		return duracaoEmMinutos;
-	}
-
-	public void setDuracaoEmMinutos(int duracaoEmMinutos) {
-		this.duracaoEmMinutos = duracaoEmMinutos;
 	}
 
 	//Método acessor
