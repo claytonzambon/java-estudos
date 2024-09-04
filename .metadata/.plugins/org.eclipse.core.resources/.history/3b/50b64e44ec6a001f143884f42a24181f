@@ -1,0 +1,17 @@
+package exercicios_OO;
+
+public class AlunoNovoTeste {
+
+	public static void main(String[] args) {
+		AlunoNovo alunoNovo = new AlunoNovo();
+		
+		alunoNovo.setNome("Nhonho");
+		alunoNovo.setNotas(7);
+		alunoNovo.setNotas(7);
+		alunoNovo.setNotas(7);
+		
+		System.out.println(alunoNovo);
+
+	}
+
+}
