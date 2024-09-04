@@ -1,7 +1,6 @@
 package screenmatchOO;
 
 import screenmatchOO.br.com.zambon.screnmatch.modelos.Filme;
-import screenmatchOO.br.com.zambon.screnmatch.modelos.Serie;
 
 public class Principal {
 
@@ -26,13 +25,6 @@ public class Principal {
 		//meuFilme.totalDeAvaliacoes = 1;
 		
 		//System.out.println(meuFilme.pegaMedia());
-		
-		Serie lost = new Serie();
-		lost.setNome("Lost");
-		lost.setAnoDeLancamento(2002);
-		lost.exibeFichaTecnica();
-		lost.setAnoDeLancamento(5);
-		lost.setEpisodiosPorTemporada(10);
 	}
 
 }

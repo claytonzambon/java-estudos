@@ -31,8 +31,6 @@ public class Principal {
 		lost.setNome("Lost");
 		lost.setAnoDeLancamento(2002);
 		lost.exibeFichaTecnica();
-		lost.setAnoDeLancamento(5);
-		lost.setEpisodiosPorTemporada(10);
 	}
 
 }
