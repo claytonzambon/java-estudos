@@ -9,12 +9,6 @@ public class IdadePessoaTeste {
 		pessoa1.setIdade(10);
 		
 		System.out.println(pessoa1.verificaSeMaiorDeIdade());
-		
-		IdadePessoa pessoa2 = new IdadePessoa();
-		pessoa2.setNome("Seu Barriga");
-		pessoa2.setIdade(39);
-		
-		System.out.println(pessoa2.verificaSeMaiorDeIdade());
 
 	}
 
