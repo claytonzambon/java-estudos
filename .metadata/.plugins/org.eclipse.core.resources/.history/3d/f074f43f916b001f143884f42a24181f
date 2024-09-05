@@ -1,0 +1,8 @@
+package exercicios_OO.animal;
+
+public class Animal {
+	
+	public String emitirSom() {
+		return String.format("Grunido");
+	}
+}
