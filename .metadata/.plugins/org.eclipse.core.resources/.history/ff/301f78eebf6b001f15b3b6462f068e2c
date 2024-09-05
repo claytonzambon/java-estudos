@@ -1,0 +1,18 @@
+package exercicios_OO.contabancaria;
+
+public class ContaBancaria {
+
+	double saldo;
+	
+	public void depositar(double deposito) {
+		saldo += deposito;
+	}
+	
+	public void sacar(double saque) {
+		saldo -= saque;
+	}
+	
+	public double consultarSaldo() {
+		return saldo;
+	}
+}
