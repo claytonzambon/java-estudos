@@ -1,0 +1,10 @@
+package exercicios_OO.interfaces.vendavel;
+
+public class VendavelTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

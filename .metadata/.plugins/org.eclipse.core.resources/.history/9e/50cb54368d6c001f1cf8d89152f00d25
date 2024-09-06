@@ -1,0 +1,5 @@
+package exercicios_OO.interfaces.vendavel;
+
+public interface Vendavel {
+	double calcularPrecoFinal();
+}
