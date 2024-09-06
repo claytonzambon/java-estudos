@@ -1,0 +1,18 @@
+package exercicios_OO.interfaces.tabuadamultiplicacao;
+
+public class ConversorTemperaturaPadrao implements ConversorTemperatura{
+
+	@Override
+	public void celsiusParaFahrenheit(double celsius) {
+		double fahrenheit = 32 + (celsius * (9.0/5.0));
+		System.out.println("A temperatura em Fahrenheit é: " + fahrenheit);
+		
+	}
+
+	@Override
+	public void fahrenheitParaCelsius(double fahrenheit) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

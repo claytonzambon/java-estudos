@@ -1,0 +1,6 @@
+package exercicios_OO.interfaces.calculadorasalaretangular;
+
+public class CalculoGeometrico {
+	void calcularArea(double altura, double largura);
+	calcularPerimetro(double altura, double largura);
+}
