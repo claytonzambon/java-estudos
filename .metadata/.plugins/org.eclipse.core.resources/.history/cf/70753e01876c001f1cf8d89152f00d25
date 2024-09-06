@@ -1,0 +1,16 @@
+package exercicios_OO.interfaces.conversormoeda;
+
+public class ConversorMoeda implements ConversaoFinanceira{
+
+	private double valorDoDolarEmReais;
+	
+	public void setValorDoDolarEmReais(double valorDoDolarEmReais) {
+		this.valorDoDolarEmReais = valorDoDolarEmReais;
+	}
+
+	@Override
+	public double converterDolarParaReal(double valorEmDolar) {
+		return valorDoDolarEmReais * valorEmDolar;
+	}
+	
+}
