@@ -60,7 +60,7 @@ public class Principal {
 		episodio.setNumero(1);
 		episodio.setSerie(lost);
 		episodio.setTotalVisualizacoes(300);
-		filtro.filtra(episodio);
+		//filtro.filtra(episodio);
 	}
 
 }
