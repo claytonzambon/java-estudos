@@ -1,0 +1,7 @@
+package screenmatchOO.br.com.zambon.screnmatch.modelos;
+
+public class Espisodio {
+	private int numero;
+	private String nome;
+	private Serie serie;
+}

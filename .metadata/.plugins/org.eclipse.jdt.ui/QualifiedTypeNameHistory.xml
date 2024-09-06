@@ -3,4 +3,8 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="screenmatchOO.br.com.zambon.screnmatch.modelos.Serie"/>
+    <fullyQualifiedTypeName name="exercicios_OO.contabancaria.ContaCorrente"/>
+    <fullyQualifiedTypeName name="exercicios_OO.numerosPrimos.VerificadorPrimo"/>
+    <fullyQualifiedTypeName name="exercicios_OO.numerosPrimos.GeradorPrimo"/>
+    <fullyQualifiedTypeName name="exercicios_OO.numerosPrimos.NumerosPrimos"/>
 </qualifiedTypeNameHistroy>
