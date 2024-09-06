@@ -1,0 +1,5 @@
+package exercicios_OO.interfaces.calculavel;
+
+public class ProdutoFisico extends Produto implements Calculavel {
+
+}

@@ -1,0 +1,17 @@
+package exercicios_OO.interfaces.calculavel;
+
+public class CalculavelTeste {
+
+	public static void main(String[] args) {
+		Livro livro = new Livro();
+		livro.setNome("Maze Runner");
+		livro.setPreco(23.00);
+		livro.setAutor("Adam Driver");
+		System.out.println("O preço do livro " + livro.getNome() + " é: " + livro.calcularPrecoFinal());
+		
+		ProdutoFisico produtoFisico = new ProdutoFisico();
+		
+
+	}
+
+}
