@@ -1,0 +1,5 @@
+package exercicios_OO.interfaces.tabuadamultiplicacao;
+
+public class TabuadaMultiplicacao implements Tabuada{
+
+}
