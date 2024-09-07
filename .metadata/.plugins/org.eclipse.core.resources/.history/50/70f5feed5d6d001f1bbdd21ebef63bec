@@ -1,0 +1,30 @@
+package appmusicas.modelos;
+
+public class Audio {
+	private String titulo;
+	private int totalReproducoes;
+	private int totalCurtidas;
+	private int classificacao;
+	
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	public int getClassificacao() {
+		return classificacao;
+	}
+	public void setClassificacao(int classificacao) {
+		this.classificacao = classificacao;
+	}
+	
+	public void curte() {
+		totalCurtidas++; 
+	}
+	
+	public void reproduz() {
+		totalReproducoes++;
+	}
+
+}

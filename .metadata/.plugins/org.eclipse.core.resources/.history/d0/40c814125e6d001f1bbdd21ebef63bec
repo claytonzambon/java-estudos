@@ -1,0 +1,5 @@
+package appmusicas.modelos;
+
+public class Musica extends Audio {
+
+}
