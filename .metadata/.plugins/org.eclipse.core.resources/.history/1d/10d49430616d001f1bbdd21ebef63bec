@@ -32,8 +32,8 @@ public class Principal {
 		}
 		
 		MinhasPreferidas minhasPreferidas = new MinhasPreferidas();
-		minhasPreferidas.inclui(musica);
 		minhasPreferidas.inclui(podcast);
+		minhasPreferidas.inclui(musica);
 	}
 
 }

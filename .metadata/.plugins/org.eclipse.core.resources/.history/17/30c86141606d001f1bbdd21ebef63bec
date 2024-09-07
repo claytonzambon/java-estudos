@@ -1,6 +1,5 @@
 package appmusicas.principal;
 
-import appmusicas.modelos.MinhasPreferidas;
 import appmusicas.modelos.Musica;
 import appmusicas.modelos.Podcast;
 
@@ -15,7 +14,7 @@ public class Principal {
 			musica.reproduz();
 		}
 		
-		for (int i = 0; i < 700; i++) {
+		for (int i = 0; i < 50; i++) {
 			musica.curte();
 		}
 		
@@ -30,10 +29,6 @@ public class Principal {
 		for (int i = 0; i < 600; i++) {
 			podcast.curte();
 		}
-		
-		MinhasPreferidas minhasPreferidas = new MinhasPreferidas();
-		minhasPreferidas.inclui(musica);
-		minhasPreferidas.inclui(podcast);
 	}
 
 }

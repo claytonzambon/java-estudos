@@ -29,7 +29,7 @@ public class Musica extends Audio {
 		if (this.getTotalReproducoes() > 2000) {
 			return 10;
 		} else {
-			return 7;
+			return 8;
 		}
 	}
 }
