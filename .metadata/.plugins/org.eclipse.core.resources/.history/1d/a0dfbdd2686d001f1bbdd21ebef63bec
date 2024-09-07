@@ -1,7 +1,5 @@
 package screenmatchListasEColecoes;
 
-import java.util.ArrayList;
-
 import screenmatchListasEColecoes.br.com.zambon.screnmatch.calculos.CalculadoraDeTempo;
 import screenmatchListasEColecoes.br.com.zambon.screnmatch.calculos.FiltroRecomendacao;
 import screenmatchListasEColecoes.br.com.zambon.screnmatch.modelos.Episodio;
@@ -63,23 +61,6 @@ public class Principal {
 		episodio.setSerie(lost);
 		episodio.setTotalVisualizacoes(300);
 		filtro.filtra(episodio);
-		
-		var filmeZambon = new Filme();
-		filmeZambon.setNome("Interestelar");
-		filmeZambon.setDuracaoEmMinutos(169);
-		filmeZambon.setAnoDeLancamento(2014);
-		filmeZambon.avalia(10);
-		
-		System.out.println();
-		
-		ArrayList<Filme> listaDeFilmes = new ArrayList<>();
-		listaDeFilmes.add(meuFilme);
-		listaDeFilmes.add(outroFilme);
-		listaDeFilmes.add(meuFilme);
-		
-		System.out.println("Tamanho da lista: " + listaDeFilmes.size());
-		System.out.println("Nome do primeiro Filme: " + listaDeFilmes.get(0).getNome());
-		System.out.println(listaDeFilmes);
 	}
 
 }
