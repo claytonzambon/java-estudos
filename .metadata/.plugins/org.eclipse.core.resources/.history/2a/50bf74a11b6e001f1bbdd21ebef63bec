@@ -11,8 +11,8 @@ import screenmatchListasEColecoes.br.com.zambon.screnmatch.modelos.Serie;
 public class Principal {
 
 	public static void main(String[] args) {
-		Filme meuFilme = new Filme("O Poderoso chefão");
-		//meuFilme.setNome("O Poderoso chefão");
+		Filme meuFilme = new Filme();
+		meuFilme.setNome("O Poderoso chefão");
 		meuFilme.setAnoDeLancamento(1970);
 		meuFilme.setDuracaoEmMinutos(180);
 		System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
@@ -43,8 +43,8 @@ public class Principal {
 		lost.setMinutosporEpisodio(50);
 		System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
 		
-		Filme outroFilme = new Filme("Avatar");
-		//outroFilme.setNome("Avatar");
+		Filme outroFilme = new Filme();
+		outroFilme.setNome("Avatar");
 		outroFilme.setAnoDeLancamento(2023);
 		outroFilme.setDuracaoEmMinutos(200);
 		
@@ -66,7 +66,6 @@ public class Principal {
 		
 		var filmeZambon = new Filme("Interestelar");
 		filmeZambon.setDuracaoEmMinutos(169);
-		//filmeZambon.setNome("Interestelar");
 		filmeZambon.setAnoDeLancamento(2014);
 		filmeZambon.avalia(10);
 		
