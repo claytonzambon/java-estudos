@@ -27,7 +27,6 @@ public class ProdutoTeste {
 		
 		System.out.println("Tamanho da lista de Produtos: " + listaDeProdutos.size());
 		System.out.println("Produto 2 da lista de Produtos: " + listaDeProdutos.get(1).getNome());
-		System.out.println(listaDeProdutos);
 
 	}
 
