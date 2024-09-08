@@ -1,0 +1,10 @@
+package screenmatchListasEColecoes.br.com.zambon.screnmatch.principal;
+
+public class PrincipalComListas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
