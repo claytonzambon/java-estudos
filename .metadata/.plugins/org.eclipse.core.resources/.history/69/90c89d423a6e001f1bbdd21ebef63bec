@@ -1,5 +1,6 @@
 package exercicios_OO.listasecolecoes.produto;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class ProdutoTeste {
@@ -21,7 +22,7 @@ public class ProdutoTeste {
 		System.out.println(listaDeProdutos);
 		
 		ProdutoPerecivel produtoPerecivel1 = new ProdutoPerecivel("Iogurte 200ml", 2.98, 12, "10/09/2024");
-		System.out.println(produtoPerecivel1);
+
 	}
 
 }

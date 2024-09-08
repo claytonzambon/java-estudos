@@ -1,0 +1,13 @@
+package exercicios_OO.listasecolecoes.produto;
+
+import java.util.Date;
+
+public class ProdutoPerecivel extends Produto {
+
+	private Date dataDeValidade;
+	
+	public ProdutoPerecivel(String nome, double preco, int quantidade, Date dataDeValidade) {
+		super(nome, preco, quantidade);
+		this.dataDeValidade = dataDeValidade;
+	}
+}

@@ -20,8 +20,8 @@ public class ProdutoTeste {
 		System.out.println("Produto 2 da lista de Produtos: " + listaDeProdutos.get(1).getNome());
 		System.out.println(listaDeProdutos);
 		
-		ProdutoPerecivel produtoPerecivel1 = new ProdutoPerecivel("Iogurte 200ml", 2.98, 12, "10/09/2024");
-		System.out.println(produtoPerecivel1);
+		ProdutoPerecivel produtoPerecivel1 = new ProdutoPerecivel("Iogurte 200ml", 2.98, 12, Date(10/09/2024));
+
 	}
 
 }
