@@ -11,9 +11,9 @@ import screenmatchListasEColecoes.br.com.zambon.screnmatch.modelos.Serie;
 public class Principal {
 
 	public static void main(String[] args) {
-		Filme meuFilme = new Filme("O Poderoso chefão", 1970);
+		Filme meuFilme = new Filme("O Poderoso chefão");
 		//meuFilme.setNome("O Poderoso chefão");
-		//meuFilme.setAnoDeLancamento(1970);
+		meuFilme.setAnoDeLancamento(1970);
 		meuFilme.setDuracaoEmMinutos(180);
 		System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
 		
@@ -33,9 +33,9 @@ public class Principal {
 		
 		//System.out.println(meuFilme.pegaMedia());
 		
-		Serie lost = new Serie("Lost", 2002);
-		//lost.setNome("Lost");
-		//lost.setAnoDeLancamento(2002);
+		Serie lost = new Serie();
+		lost.setNome("Lost");
+		lost.setAnoDeLancamento(2002);
 		lost.exibeFichaTecnica();
 		lost.setAnoDeLancamento(5);
 		lost.setTemporadas(10);
@@ -43,9 +43,9 @@ public class Principal {
 		lost.setMinutosporEpisodio(50);
 		System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
 		
-		Filme outroFilme = new Filme("Avatar", 2023);
+		Filme outroFilme = new Filme("Avatar");
 		//outroFilme.setNome("Avatar");
-		//outroFilme.setAnoDeLancamento(2023);
+		outroFilme.setAnoDeLancamento(2023);
 		outroFilme.setDuracaoEmMinutos(200);
 		
 		CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
@@ -64,10 +64,10 @@ public class Principal {
 		episodio.setTotalVisualizacoes(300);
 		filtro.filtra(episodio);
 		
-		var filmeZambon = new Filme("Interestelar", 2014);
+		var filmeZambon = new Filme("Interestelar");
 		filmeZambon.setDuracaoEmMinutos(169);
 		//filmeZambon.setNome("Interestelar");
-		//filmeZambon.setAnoDeLancamento(2014);
+		filmeZambon.setAnoDeLancamento(2014);
 		filmeZambon.avalia(10);
 		
 		System.out.println();
