@@ -1,0 +1,10 @@
+package exercicios_OO.listasecolecoes.produtoLista;
+
+public class ProdutoTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
