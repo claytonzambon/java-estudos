@@ -3,8 +3,6 @@ package screenmatchListasEColecoes.br.com.zambon.screnmatch.principal;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.LinkedList;
-import java.util.List;
 
 import screenmatchListasEColecoes.br.com.zambon.screnmatch.modelos.Filme;
 import screenmatchListasEColecoes.br.com.zambon.screnmatch.modelos.Serie;
@@ -26,7 +24,7 @@ public class PrincipalComListas {
 		
 		
 		
-		List<Titulo> lista = new LinkedList<>();
+		ArrayList<Titulo> lista = new ArrayList<>();
 		lista.add(meuFilme);
 		lista.add(outroFilme);
 		lista.add(filmeZambon);
