@@ -1,0 +1,17 @@
+package exercicios_OO.listasecolecoes.titulo;
+
+public class TituloTeste {
+
+	public static void main(String[] args) {
+
+		Titulo titulo1 = new Titulo("Clube da Luta");
+		Titulo titulo2 = new Titulo("Ace Ventura");
+		Titulo titulo3 = new Titulo("Driver");
+		Titulo titulo4 = new Titulo("Jurassic Park");
+		
+		System.out.println("*** Lista de Títulos ***");
+		System.out.println(titulo);
+
+	}
+
+}
