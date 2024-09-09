@@ -2,7 +2,6 @@ package screenmatchListasEColecoes.br.com.zambon.screnmatch.principal;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
 import screenmatchListasEColecoes.br.com.zambon.screnmatch.modelos.Filme;
 import screenmatchListasEColecoes.br.com.zambon.screnmatch.modelos.Serie;
@@ -54,9 +53,6 @@ public class PrincipalComListas {
 		Collections.sort(lista);
 		lista.forEach(System.out::println);
 		
-		System.out.println("*** Lista de Títulos por Ano de Lançamento ***");
-		lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
-		lista.forEach(System.out::println);
 	}
 
 }

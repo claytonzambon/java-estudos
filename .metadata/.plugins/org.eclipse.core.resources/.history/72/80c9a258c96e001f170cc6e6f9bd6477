@@ -56,7 +56,7 @@ public class PrincipalComListas {
 		
 		System.out.println("*** Lista de Títulos por Ano de Lançamento ***");
 		lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
-		lista.forEach(System.out::println);
+		
 	}
 
 }
