@@ -1,0 +1,17 @@
+package exercicios_OO.listasecolecoes.contabancaria;
+
+public class CotnaBancariaTeste {
+
+	public static void main(String[] args) {
+		ContaBancaria conta1 = new ContaBancaria(100, 500.00);
+		
+		ContaBancaria conta2 = new ContaBancaria(105, 600.00);
+		
+		ContaBancaria conta3 = new ContaBancaria(110, 700.00);
+		
+		ContaBancaria conta4 = new ContaBancaria(115, 800.00);
+		
+		ContaBancaria conta5 = new ContaBancaria(120, 900.00);
+	}
+
+}
