@@ -1,0 +1,13 @@
+package exercicios.desafiovariavel;
+
+public class DesafioVariavel {
+
+	int a = 7;
+	public static void main(String[] args) {
+		
+		DesafioVariavel desafio = new DesafioVariavel();
+		System.out.println(desafio.a);
+
+	}
+
+}
