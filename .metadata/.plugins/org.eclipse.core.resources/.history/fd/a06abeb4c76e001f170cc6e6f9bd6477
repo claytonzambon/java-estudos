@@ -49,7 +49,7 @@ public class PrincipalComListas {
 		Collections.sort(buscaPorArtista);
 		buscaPorArtista.forEach(System.out::println);
 		
-		System.out.println("*** Lista de Títulos Ordenados ***");
+		
 		Collections.sort(lista);
 		lista.forEach(System.out::println);
 		

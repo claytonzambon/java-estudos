@@ -1,7 +1,6 @@
 package screenmatchListasEColecoes.br.com.zambon.screnmatch.principal;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 import screenmatchListasEColecoes.br.com.zambon.screnmatch.modelos.Filme;
 import screenmatchListasEColecoes.br.com.zambon.screnmatch.modelos.Serie;
@@ -44,14 +43,6 @@ public class PrincipalComListas {
 		
 		System.out.println("*** Listando Artistas ***");
 		buscaPorArtista.forEach(System.out::println);
-		
-		System.out.println("*** Listando Artistas Ordenado ***");
-		Collections.sort(buscaPorArtista);
-		buscaPorArtista.forEach(System.out::println);
-		
-		System.out.println("*** Lista de Títulos Ordenados ***");
-		Collections.sort(lista);
-		lista.forEach(System.out::println);
 		
 	}
 
