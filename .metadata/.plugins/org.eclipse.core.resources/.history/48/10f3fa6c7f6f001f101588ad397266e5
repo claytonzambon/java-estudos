@@ -15,7 +15,7 @@ public class CartaoDeCredito {
 	}
 	
 	public boolean adicionaCompra(Compra compra) {
-		if (saldo >= compra.getValor()) {
+		if (saldo > compra.getValor()) {
 			saldo -= compra.getValor();
 			compras.add(compra);
 			return true;
