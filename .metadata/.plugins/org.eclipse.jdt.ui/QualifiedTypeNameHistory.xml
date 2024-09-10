@@ -7,4 +7,7 @@
     <fullyQualifiedTypeName name="exercicios_OO.numerosPrimos.VerificadorPrimo"/>
     <fullyQualifiedTypeName name="exercicios_OO.numerosPrimos.GeradorPrimo"/>
     <fullyQualifiedTypeName name="exercicios_OO.numerosPrimos.NumerosPrimos"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="exercicios.desafiovariavel.DesafioVariavel"/>
 </qualifiedTypeNameHistroy>
