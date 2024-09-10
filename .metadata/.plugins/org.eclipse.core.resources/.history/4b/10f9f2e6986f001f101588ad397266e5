@@ -1,0 +1,30 @@
+package estruturadedados.sequencial01;
+
+import java.util.Arrays;
+
+public class Vetor {
+	private Aluno[] alunos = new Aluno[100];
+	
+	public void adiciona(Aluno aluno) {
+		// recebe aluno
+	}
+	
+	public void remove(int posicao) {
+		//remove pela posicao
+	}
+	
+	public boolean contem(Aluno aluno) {
+		//descobre se o aluno está ou não na lista
+		return false;
+	}
+	
+	public int tamanho() {
+		//devolve a quantidade de alunos
+		return 0;
+	}
+	
+	public String toString() {
+		//facilitará a impressão
+		return Arrays.toString(alunos);
+	}
+}

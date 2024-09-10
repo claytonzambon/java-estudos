@@ -1,0 +1,10 @@
+package estruturadedados.sequencial01;
+
+public class VetorTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
