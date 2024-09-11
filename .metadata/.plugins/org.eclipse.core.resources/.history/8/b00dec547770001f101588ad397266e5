@@ -1,0 +1,13 @@
+package exercicios_OO.polimorfismo;
+
+public class GralhaAzul extends Animal{
+
+	public GralhaAzul(String nome, double peso) {
+		super(nome, peso);
+	}
+
+	public String locomover() {
+		return "Voando...";
+	}
+	
+}

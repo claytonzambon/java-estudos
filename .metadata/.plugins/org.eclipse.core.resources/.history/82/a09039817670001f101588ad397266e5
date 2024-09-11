@@ -1,0 +1,19 @@
+package exercicios_OO.polimorfismo;
+
+import javax.swing.JOptionPane;
+
+public class AnimalTeste {
+
+	public static void main(String[] args) {
+		
+		GralhaAzul ave = new GralhaAzul("Gralha", 250);
+		
+		JOptionPane.showMessageDialog(null, ave.locomover());
+		
+		Animal animal = new Peixe("Totó", 5.0);
+		
+		JOptionPane.showMessageDialog(null, animal.locomover());
+		
+	}
+
+}

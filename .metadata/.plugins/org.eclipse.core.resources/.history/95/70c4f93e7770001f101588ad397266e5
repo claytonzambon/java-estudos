@@ -1,0 +1,13 @@
+package exercicios_OO.polimorfismo;
+
+public class Peixe extends Animal {
+
+	public Peixe(String nome, double peso) {
+		super(nome, peso);
+	}
+
+	public String locomover() {
+		return "Nadando...";
+	}
+	
+}

@@ -1,0 +1,12 @@
+package exercicios_OO.polimorfismo;
+
+public class Cobra extends Animal{
+
+	public Cobra(String nome, double peso) {
+		super(nome, peso);
+	}
+
+	public String locomover() {
+		return "Rastejando...";
+	}
+}

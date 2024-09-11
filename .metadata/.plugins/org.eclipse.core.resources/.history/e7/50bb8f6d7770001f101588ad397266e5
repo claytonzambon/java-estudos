@@ -1,0 +1,13 @@
+package exercicios_OO.polimorfismo;
+
+public class Cachorro extends Animal {
+
+	public Cachorro(String nome, double peso) {
+		super(nome, peso);
+	}
+	
+	public String locomover() {
+		return "Correndo...";
+	}
+
+}
