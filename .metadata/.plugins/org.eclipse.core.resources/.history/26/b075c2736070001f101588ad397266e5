@@ -48,18 +48,18 @@ public class Program {
 		
 		impostoDevido = impostoBruto - abatimento;
 		
-		String relatorioFinal = String.format("RELATÓRIO DE IMPOSTO DE RENDA"
+		String relatorioFinal = String.format("RELATÓRIO DE IMPOSTO DE RENDA\n"
 				+ "\n\n### CONSOLIDADO DE RENDA ###"
-				+ "\nImposto sobre o salário: R$ %.2f"
-				+ "\nImposto sobre serviços: R$ %.2f"
-				+ "\nImposto sobre ganho de Capital: R$ %.2f"
-				+ "\n\n### DEDUÇÕES ###"
-				+ "\nMáximo dedutível: R$ %.2f"
-				+ "\nGastos dedutíveis: R$ %.2f"
-				+ "\n\n### RESUMO ###"
-				+ "\nImposto bruto total: R$ %.2f"
-				+ "\nAbatimento: R$ %.2f"
-				+ "\nImposto devido: R$ %.2f",
+				+ "\nImposto sobre o salário: %.2f"
+				+ "\nImposto sobre serviços: %.2f"
+				+ "\nImposto sobre ganho de Capital: %.2f"
+				+ "\n\n### DEDUÇÕES ###\n\n"
+				+ "\nMáximo dedutível: %.2f"
+				+ "\nGastos dedutíveis: %.2f"
+				+ "\n\n### RESUMO ###\n\n"
+				+ "\nImposto bruto total: %.2f"
+				+ "\nAbatimento: %.2f"
+				+ "\nImposto devido: %.2f",
 				impostoSalario, impostoServico,
 				impostoCapital, maximoDedutivel, 
 				gastosDedutiveis, impostoBruto,

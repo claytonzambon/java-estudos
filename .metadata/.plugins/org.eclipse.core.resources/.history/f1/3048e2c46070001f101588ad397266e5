@@ -48,7 +48,7 @@ public class Program {
 		
 		impostoDevido = impostoBruto - abatimento;
 		
-		String relatorioFinal = String.format("RELATÓRIO DE IMPOSTO DE RENDA"
+		String relatorioFinal = String.format("RELATÓRIO DE IMPOSTO DE RENDA\n"
 				+ "\n\n### CONSOLIDADO DE RENDA ###"
 				+ "\nImposto sobre o salário: R$ %.2f"
 				+ "\nImposto sobre serviços: R$ %.2f"

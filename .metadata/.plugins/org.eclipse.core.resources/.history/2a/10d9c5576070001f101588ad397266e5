@@ -48,37 +48,19 @@ public class Program {
 		
 		impostoDevido = impostoBruto - abatimento;
 		
-		String relatorioFinal = String.format("RELATÓRIO DE IMPOSTO DE RENDA"
-				+ "\n\n### CONSOLIDADO DE RENDA ###"
-				+ "\nImposto sobre o salário: R$ %.2f"
-				+ "\nImposto sobre serviços: R$ %.2f"
-				+ "\nImposto sobre ganho de Capital: R$ %.2f"
-				+ "\n\n### DEDUÇÕES ###"
-				+ "\nMáximo dedutível: R$ %.2f"
-				+ "\nGastos dedutíveis: R$ %.2f"
-				+ "\n\n### RESUMO ###"
-				+ "\nImposto bruto total: R$ %.2f"
-				+ "\nAbatimento: R$ %.2f"
-				+ "\nImposto devido: R$ %.2f",
-				impostoSalario, impostoServico,
-				impostoCapital, maximoDedutivel, 
-				gastosDedutiveis, impostoBruto,
-				abatimento, impostoDevido);
-		
 		//Relatorio
-		JOptionPane.showMessageDialog(null, relatorioFinal);
-//		JOptionPane.showMessageDialog(null, "RELATÓRIO DE IMPOSTO DE RENDA\n"
-//				+ "\n\n### CONSOLIDADO DE RENDA ###"
-//				+ "\nImposto sobre o salário: " + impostoSalario
-//				+ "\nImposto sobre serviços: " + impostoServico
-//				+ "\nImposto sobre ganho de Capital: " + impostoCapital
-//				+ "\n\n### DEDUÇÕES ###"
-//				+ "\nMáximo dedutível: " + maximoDedutivel
-//				+ "\nGastos dedutíveis: " + gastosDedutiveis
-//				+ "\n\n### RESUMO ###"
-//				+ "\nImposto bruto total: " + impostoBruto
-//				+ "\nAbatimento: " + abatimento
-//				+ "\nImposto devido: " + impostoDevido);
+		JOptionPane.showMessageDialog(null, "RELATÓRIO DE IMPOSTO DE RENDA\n"
+				+ "\n\n### CONSOLIDADO DE RENDA ###"
+				+ "\nImposto sobre o salário: " + impostoSalario
+				+ "\nImposto sobre serviços: " + impostoServico
+				+ "\nImposto sobre ganho de Capital: " + impostoCapital
+				+ "\n\n### DEDUÇÕES ###"
+				+ "\nMáximo dedutível: " + maximoDedutivel
+				+ "\nGastos dedutíveis: " + gastosDedutiveis
+				+ "\n\n### RESUMO ###"
+				+ "\nImposto bruto total: " + impostoBruto
+				+ "\nAbatimento: " + abatimento
+				+ "\nImposto devido: " + impostoDevido);
 		
 	}
 
