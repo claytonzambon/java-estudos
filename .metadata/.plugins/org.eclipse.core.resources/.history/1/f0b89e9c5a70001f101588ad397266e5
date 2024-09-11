@@ -1,0 +1,17 @@
+package exercicios.imposto;
+
+import javax.swing.JOptionPane;
+
+public class Program {
+
+	public static void main(String[] args) {
+		double ganhoSalario, ganhoServicos, ganhoCapital, gastoMedio, gastoEducacao;
+		double impostoSalario, impostoServico, impostoCapital;
+		double impostoBruto, maximoDedutivel, gastosDedutiveis;
+		double abatimento, impostoDevido;
+		
+		ganhoSalario = Double.parseDouble(JOptionPane.showInputDialog("Renda anual com salário: "));
+
+	}
+
+}
