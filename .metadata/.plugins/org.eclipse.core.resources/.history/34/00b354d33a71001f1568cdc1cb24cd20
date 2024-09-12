@@ -1,0 +1,20 @@
+package estruturadedados.listaligada;
+
+import javax.swing.JOptionPane;
+
+public class TestaListaLigada {
+
+	public static void main(String[] args) {
+		
+		ListaLigada lista = new ListaLigada();
+		
+		String relatorioFinal = lista.toString();
+		lista.adicionaNoComeco("Jupiter");
+		relatorioFinal += "\n" + lista.toString();
+		lista.adicionaNoComeco("Marte");
+		relatorioFinal += "\n" + lista.toString();
+		JOptionPane.showMessageDialog(null, relatorioFinal);
+
+	}
+
+}

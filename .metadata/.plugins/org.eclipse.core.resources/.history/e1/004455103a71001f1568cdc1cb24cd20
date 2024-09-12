@@ -1,0 +1,11 @@
+package estruturadedados.listaligada;
+
+public class TestaListaLigada {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

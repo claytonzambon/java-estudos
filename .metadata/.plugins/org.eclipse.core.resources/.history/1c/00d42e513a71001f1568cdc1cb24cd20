@@ -1,0 +1,15 @@
+package estruturadedados.listaligada;
+
+import javax.swing.JOptionPane;
+
+public class TestaListaLigada {
+
+	public static void main(String[] args) {
+		
+		ListaLigada lista = new ListaLigada();
+		
+		JOptionPane.showMessageDialog(null, lista);
+
+	}
+
+}
