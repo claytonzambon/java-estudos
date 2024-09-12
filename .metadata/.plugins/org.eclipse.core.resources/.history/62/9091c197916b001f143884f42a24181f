@@ -1,9 +1,0 @@
-package exercicios_OO.animal;
-
-public class Cachorro extends Animal{
-
-	@Override
-	public void emitirSom() {
-		System.out.println("Au au au");
-	}
-}
