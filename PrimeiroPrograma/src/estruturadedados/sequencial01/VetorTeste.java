@@ -1,5 +1,7 @@
 package estruturadedados.sequencial01;
 
+import javax.swing.JOptionPane;
+
 public class VetorTeste {
 
 	public static void main(String[] args) {
@@ -30,7 +32,8 @@ public class VetorTeste {
 			Aluno y = new Aluno("Teste" + i);
 			lista.adiciona(y);
 		}
-		System.out.println(lista);
+		JOptionPane.showMessageDialog(null, lista);
+		//System.out.println(lista);
 	}
 
 }

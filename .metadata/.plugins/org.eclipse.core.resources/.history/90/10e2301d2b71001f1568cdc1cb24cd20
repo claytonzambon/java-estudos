@@ -1,0 +1,11 @@
+package exercicios.bar;
+
+public class CalculosBar {
+
+	private char sexo;
+	private int cerveja;
+	private int refrigerante;
+	private int espetos;
+	
+	
+}

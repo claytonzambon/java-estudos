@@ -1,0 +1,34 @@
+package exercicios.bar;
+
+public class CalculosBar {
+
+	private char sexo;
+	private int cerveja;
+	private int refrigerante;
+	private int espetos;
+	
+	public CalculosBar(char sexo, int cerveja, int refrigerante, int espetos) {
+		this.sexo = sexo;
+		this.cerveja = cerveja;
+		this.refrigerante = refrigerante;
+		this.espetos = espetos;
+	}
+
+	public char getSexo() {
+		return sexo;
+	}
+
+	public int getCerveja() {
+		return cerveja;
+	}
+
+	public int getRefrigerante() {
+		return refrigerante;
+	}
+
+	public int getEspetos() {
+		return espetos;
+	}
+	
+	
+}

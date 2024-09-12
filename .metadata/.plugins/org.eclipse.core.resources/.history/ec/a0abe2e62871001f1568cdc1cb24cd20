@@ -1,0 +1,60 @@
+package exercicios.helloworld;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class InputWindow {
+
+    public static void main(String[] args) {
+        // Cria a janela principal
+        JFrame frame = new JFrame("Janela de Input");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 200);
+        
+        // Cria um painel para organizar os componentes
+        JPanel panel = new JPanel();
+        frame.add(panel);
+        placeComponents(panel);
+
+        // Torna a janela visível
+        frame.setVisible(true);
+    }
+
+    private static void placeComponents(JPanel panel) {
+        panel.setLayout(null);
+
+        // Rótulo para o campo de texto
+        JLabel userLabel = new JLabel("Digite algo:");
+        userLabel.setBounds(10, 20, 80, 25);
+        panel.add(userLabel);
+
+        // Campo de texto onde o usuário pode digitar
+        JTextField userText = new JTextField(20);
+        userText.setBounds(100, 20, 165, 25);
+        panel.add(userText);
+
+        // Botão para enviar a informação
+        JButton sendButton = new JButton("Enviar");
+        sendButton.setBounds(10, 80, 80, 25);
+        panel.add(sendButton);
+
+        // Adiciona a ação ao botão
+        sendButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Obtém o texto digitado pelo usuário
+                String userInput = userText.getText();
+                
+                // Exibe o texto em uma caixa de diálogo
+                JOptionPane.showMessageDialog(null, "Você digitou: " + userInput);
+            }
+        });
+    }
+}
+
