@@ -8,6 +8,10 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.Scanner;
 
+import com.google.gson.Gson;
+
+import screenmatchListasEColecoes.br.com.zambon.screnmatch.modelos.Titulo;
+
 public class PrincipalComBuscaViaAPI {
     public static void main(String[] args) throws IOException, InterruptedException {
         
@@ -28,8 +32,12 @@ public class PrincipalComBuscaViaAPI {
         HttpResponse<String> response = client
             .send(request, BodyHandlers.ofString());
 
-        System.out.println(response.body());
-        //JOptionPane.showMessageDialog(null, response.body(), null, 0);
+        String json = response.body();
+        System.out.println(json);
+        
+        Gson gson = new Gson();
+        Titulo meuTitulo = gson.fromJson(json, Titulo.class);
+        System.out.println(meuTitulo);
 
         leitura.close();
     }
