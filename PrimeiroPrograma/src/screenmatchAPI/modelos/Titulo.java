@@ -1,5 +1,7 @@
 package screenmatchAPI.modelos;
 
+import screenmatchAPI.excecao.ErroDeConversaoException;
+
 public class Titulo implements Comparable<Titulo> {
 	//Todo titulo tem:
 	//Todo atributo precisa ser privado
@@ -17,6 +19,9 @@ public class Titulo implements Comparable<Titulo> {
 
 	public Titulo(TituloOmdb meuTituloOmdb) {
 		this.nome = meuTituloOmdb.title();
+		if (meuTituloOmdb.year().length() > 4) {
+			throw new ErroDeConversaoException("Não foi possível converter o ano por ter mais de 4 dígitos");
+		}
 		this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
 		this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0, 2));
 	}

@@ -12,6 +12,7 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import screenmatchAPI.excecao.ErroDeConversaoException;
 import screenmatchAPI.modelos.Titulo;
 import screenmatchAPI.modelos.TituloOmdb;
 
@@ -24,7 +25,7 @@ public class PrincipalComBuscaViaAPI {
 
         String chaveAPI = "cf99fd64";
         
-        String endereco = "https://www.omdbapi.com/?t=" + busca + "&apikey=" + chaveAPI;
+        String endereco = "https://www.omdbapi.com/?t=" + busca.replace(" ", "+") + "&apikey=" + chaveAPI;
 
         try {
 	        HttpClient client = HttpClient.newHttpClient();
@@ -51,6 +52,8 @@ public class PrincipalComBuscaViaAPI {
         	System.out.println("Ocorreu um erro: " + e.getMessage());
         } catch (IllegalArgumentException e) {
         	System.out.println("Ocorreu um erro: " + e.getMessage());
+        } catch (ErroDeConversaoException e) {
+        	System.out.println(e.getMessage());
         }
         
         System.out.println("\n\n--- Sistema finalizado ---");
