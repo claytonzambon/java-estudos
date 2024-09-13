@@ -12,12 +12,12 @@ public class PrincipalComBuscaViaAPI {
     public static void main(String[] args) throws IOException, InterruptedException {
         
         Scanner leitura = new Scanner(System.in);
-
-        HttpClient client = HttpClient.newHttpClient();
-
         System.out.print("Informe o nome do filme: ");
         String busca = leitura.nextLine();
+        
         String endereco = "https://www.omdbapi.com/?t=" + busca + "&apikey=cf99fd64";
+
+        HttpClient client = HttpClient.newHttpClient();
 
         HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create(endereco))
