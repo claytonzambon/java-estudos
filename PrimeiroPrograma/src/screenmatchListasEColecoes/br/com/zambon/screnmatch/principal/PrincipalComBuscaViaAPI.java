@@ -14,8 +14,10 @@ public class PrincipalComBuscaViaAPI {
         Scanner leitura = new Scanner(System.in);
         System.out.print("Informe o nome do filme: ");
         String busca = leitura.nextLine();
+
+        String chaveAPI = "cf99fd64";
         
-        String endereco = "https://www.omdbapi.com/?t=" + busca + "&apikey=cf99fd64";
+        String endereco = "https://www.omdbapi.com/?t=" + busca + "&apikey=" + chaveAPI;
 
         HttpClient client = HttpClient.newHttpClient();
 
