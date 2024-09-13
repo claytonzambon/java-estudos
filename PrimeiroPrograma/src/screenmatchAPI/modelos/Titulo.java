@@ -1,7 +1,5 @@
 package screenmatchAPI.modelos;
 
-import com.google.gson.annotations.SerializedName;
-
 public class Titulo implements Comparable<Titulo> {
 	//Todo titulo tem:
 	//Todo atributo precisa ser privado
