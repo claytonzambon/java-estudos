@@ -1,5 +1,6 @@
 package screenmatchAPI.principal;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -48,6 +49,11 @@ public class PrincipalComBuscaViaAPI {
         	Titulo meuTitulo = new Titulo(meuTituloOmdb);
         	System.out.println("Título já convertido:");
             System.out.println(meuTitulo);
+            
+            FileWriter escrita = new FileWriter("Filmes.txt");
+            escrita.write(meuTitulo.toString());
+            escrita.close();
+            
         } catch (NumberFormatException e) {
         	System.out.println("Ocorreu um erro: " + e.getMessage());
         } catch (IllegalArgumentException e) {
