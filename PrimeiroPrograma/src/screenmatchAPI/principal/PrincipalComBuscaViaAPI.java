@@ -8,9 +8,12 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.util.Scanner;
 
+import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import screenmatchAPI.modelos.Titulo;
+import screenmatchAPI.modelos.TituloOmdb;
 
 public class PrincipalComBuscaViaAPI {
     public static void main(String[] args) throws IOException, InterruptedException {
@@ -35,8 +38,12 @@ public class PrincipalComBuscaViaAPI {
         String json = response.body();
         System.out.println(json);
         
-        Gson gson = new Gson();
-        Titulo meuTitulo = gson.fromJson(json, Titulo.class);
+        Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
+        TituloOmdb meuTituloOmdb = gson.fromJson(json, TituloOmdb.class);
+        System.out.println(meuTituloOmdb);
+        Titulo meuTitulo = new Titulo(meuTituloOmdb);
+        
+        System.out.println("Título já convertido:");
         System.out.println(meuTitulo);
 
         leitura.close();
