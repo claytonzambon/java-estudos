@@ -1,33 +1,24 @@
 package screenmatchAPI.principal;
 
-import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.net.http.HttpResponse.BodyHandlers;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.google.gson.FieldNamingPolicy;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import screenmatchAPI.excecao.ErroDeConversaoException;
 import screenmatchAPI.modelos.Titulo;
 import screenmatchAPI.modelos.TituloOmdb;
+import screenmatchAPI.services.RequisicoesHttp;
 
 public class PrincipalComBuscaViaAPI {
     public static void main(String[] args) throws IOException, InterruptedException {
         
         Scanner leitura = new Scanner(System.in);
         List<Titulo> titulos = new ArrayList<>();
+
+        RequisicoesHttp request = new RequisicoesHttp();
         
         String busca = "";
-        
-        Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).setPrettyPrinting().create();
         
         while(!busca.equalsIgnoreCase("sair")) {
         
@@ -38,28 +29,15 @@ public class PrincipalComBuscaViaAPI {
 	        	break;
 	        }
 	
-	        String chaveAPI = "cf99fd64";
-	        
-	        String endereco = "https://www.omdbapi.com/?t=" + busca.replace(" ", "+") + "&apikey=" + chaveAPI;
-	
 	        try {
-		        HttpClient client = HttpClient.newHttpClient();
-		
-		        HttpRequest request = HttpRequest.newBuilder()
-		            .uri(URI.create(endereco))
-		            .build();
-		
-		        HttpResponse<String> response = client
-		            .send(request, BodyHandlers.ofString());
-		
-		        String json = response.body();
+	        	String endereco = request.montaUrl(busca);
+	        	String json = request.consumirAPI(endereco);
+	        	
 		        System.out.println(json);
 		        
-		        //Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
-		        TituloOmdb meuTituloOmdb = gson.fromJson(json, TituloOmdb.class);
+		        TituloOmdb meuTituloOmdb = request.gson.fromJson(json, TituloOmdb.class);
 		        System.out.println(meuTituloOmdb);
 	        
-		        //try {
 	        	Titulo meuTitulo = new Titulo(meuTituloOmdb);
 	        	System.out.println("Título já convertido:");
 	            System.out.println(meuTitulo);
@@ -77,9 +55,7 @@ public class PrincipalComBuscaViaAPI {
         
         System.out.println(titulos);
         
-        FileWriter escrita = new FileWriter("filmes.json");
-        escrita.write(gson.toJson(titulos));
-        escrita.close();
+        request.gravarArquivos("Filmes.json", titulos);
         
         System.out.println("\n\n--- Sistema finalizado ---");
         

@@ -1,5 +1,7 @@
 package exercicios_OO.escritaemarquivos.veiculo;
 
+import javax.swing.JOptionPane;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -11,7 +13,7 @@ public class VeiculoTeste {
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		
 		String json = gson.toJson(veiculo);
-		System.out.println(json);
+		JOptionPane.showMessageDialog(null, json);
 
 	}
 
